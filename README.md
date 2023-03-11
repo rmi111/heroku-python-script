@@ -92,3 +92,9 @@ application with any dependencies.
 * [Official guide to deploy app](https://devcenter.heroku.com/articles/getting-started-with-python#introduction)
 * [Official guide about worker](https://devcenter.heroku.com/articles/background-jobs-queueing)
 * [Guided "Simple twitter-bot with Python, Tweepy and Heroku"](http://briancaffey.github.io/2016/04/05/twitter-bot-tutorial.html)
+
+
+## Application Logic
+Part 2 is a daily batch job that checks for next record in supabase to follow  If the record has more than 200 followers follow the user
+
+Date stamp a field in the record that we followed it on this date   We can only follow max 400 a day but to be conservative we can follow 100  pause a random 1-3 min between follows
